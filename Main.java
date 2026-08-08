@@ -1,32 +1,21 @@
-import java.util.Random;
+import java.util.Scanner;
 // import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Random rand = new Random();
-        int num1 = rand.nextInt(1, 101);
-        int num2 = rand.nextInt(1, 101);
-        int num3 = rand.nextInt(1, 101);
-        System.out.println("Random number: " + num1);
-        System.out.println("Random number: " + num2);
-        System.out.println("Random number: " + num3);
-        // if(num1>num2){
-        // if(num1>num3){
-        // System.out.println("Largest number: "+num1);
-        // }
-        // else{
-        // System.out.println("Largest number: "+num3);
-        // }
-        // }
-        // else{
-        // if(num2>num3){
-        // System.out.println("Largest number: "+num2);
-        // }
-        // else{
-        // System.out.println("Largest number: "+num3);
-        // }
-        // }
-        int largest = Math.max(num1, Math.max(num2, num3));
-        System.out.println("Largest number: " + largest);
+        String email;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter your email: ");
+        email = s.nextLine();
+        if (email.contains("@gmail.com")) {
+            int a = email.indexOf("@");
+            String username = email.substring(0, a);
+            String domain = email.substring(a + 1);
+            System.out.println(username);
+            System.out.println(domain);
+        } else {
+            System.out.println("Email is invalid");
+        }
+        s.close();
     }
 }
