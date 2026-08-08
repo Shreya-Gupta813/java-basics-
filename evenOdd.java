@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class weightConversion {
+public class evenOdd {
     public static void main(String[] args) {
         // int score = 4;
         // String passorfail = (score >= 35) ? "PASS" : "FAIL";
@@ -12,5 +12,4 @@ public class weightConversion {
         System.out.println(check);
         s.close();
     }
-
 }
