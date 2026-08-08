@@ -36,7 +36,7 @@ public class simplecalculator {
             }
             case "^" -> res = Math.pow(num1, num2);
             default -> {
-                System.out.println("Invalid operator");
+                System.out.println("Invalid operator😒");
                 validoperator = false;
             }
         }
