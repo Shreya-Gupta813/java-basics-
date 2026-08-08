@@ -1,17 +1,32 @@
-import java.util.Scanner;
+import java.util.Random;
+// import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double l = 0;
-        double b = 0;
-        double area = 0;
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter the length of rectangle: ");
-        l = s.nextDouble();
-        System.out.print("Enter the breadth of rectangle: ");
-        b = s.nextDouble();
-        area = l * b;
-        System.out.println("Area of rectangle is: " + area + " cm\u00B2");
-        s.close();
+        Random rand = new Random();
+        int num1 = rand.nextInt(1, 101);
+        int num2 = rand.nextInt(1, 101);
+        int num3 = rand.nextInt(1, 101);
+        System.out.println("Random number: " + num1);
+        System.out.println("Random number: " + num2);
+        System.out.println("Random number: " + num3);
+        // if(num1>num2){
+        // if(num1>num3){
+        // System.out.println("Largest number: "+num1);
+        // }
+        // else{
+        // System.out.println("Largest number: "+num3);
+        // }
+        // }
+        // else{
+        // if(num2>num3){
+        // System.out.println("Largest number: "+num2);
+        // }
+        // else{
+        // System.out.println("Largest number: "+num3);
+        // }
+        // }
+        int largest = Math.max(num1, Math.max(num2, num3));
+        System.out.println("Largest number: " + largest);
     }
 }
