@@ -16,6 +16,9 @@ public class Main {
             System.out.println("Not a number");
         } catch (Exception e) {
             System.out.println("Something went wrong!!");
+        } finally {
+            s.close();
+            System.out.println("Thankyou!!");
         }
     }
 }
